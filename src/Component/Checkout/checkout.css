@@ -1,0 +1,79 @@
+.checkout_wrapper {
+  margin: 100px 120px;
+  display: flex;
+}
+.checkout_container {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  text-align: center;
+}
+.warning {
+  color: red;
+  font-weight: 700;
+  margin: 16px 0;
+}
+.checkout_container h1 {
+  text-align: center;
+}
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout img {
+  width: 150px;
+}
+.price_name {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  align-items: center;
+}
+.price_name p {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.price_name span {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.checkout_item {
+  display: flex;
+  flex-direction: column;
+}
+.price_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.class_image {
+  width: 100%;
+}
+.inner_container {
+  display: flex;
+}
+.proceed {
+  width: 60%;
+}
+.increase {
+  background-color: #f8f9fd;
+  border: 1px solid #f8f9fd;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.decrease {
+  background-color: #f8f9fd;
+  border: 1px solid #f8f9fd;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

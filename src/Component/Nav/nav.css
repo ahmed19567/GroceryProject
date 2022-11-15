@@ -1,0 +1,138 @@
+.nav-wrapper {
+  margin: 20px 120px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_section_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_section_1 img {
+  width: 100px;
+}
+
+/* contact home about part */
+.nav_section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_section_2 ul {
+  display: flex;
+}
+.nav_section_2 ul li {
+  list-style: none;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #2d333a;
+  font-weight: 600;
+}
+
+/* login */
+
+.nav_section_3 {
+  display: flex;
+}
+
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+.signin button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  background-color: #0acf8f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.signin button p {
+  color: #f9f9f9;
+  color: #303030;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* sign up */
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.signup button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  background-color: #ecfafa;
+  background-color: #dff6f6;
+  border: none;
+  border-radius: 5px;
+  display: block;
+}
+.signup button p {
+  color: #424242;
+  color: #2d333a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logout button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 25px;
+  background-color: #ecfafa;
+  background-color: #dff6f6;
+  background-color: #aec6c6;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-right: 12px;
+}
+.logout button p {
+  color: #424242;
+  color: #2d333a;
+  font-size: 14px;
+  font-weight: 700;
+}
+.cart {
+  font-size: 24px;
+  position: relative;
+  margin-right: 16px;
+}
+.cart span {
+  border: 1px solid rgb(198, 198, 198);
+  font-size: 16px;
+  position: absolute;
+  padding: 4px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #0acf8f;
+  top: -100%;
+  left: 60%;
+}
+a {
+  text-decoration: none;
+}
