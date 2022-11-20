@@ -66,3 +66,9 @@
 .signup_sumbit:hover {
   opacity: 1;
 }
+.message {
+  font-size: 16px;
+  font-weight: 500;
+  color: red;
+  margin: 32px 0;
+}

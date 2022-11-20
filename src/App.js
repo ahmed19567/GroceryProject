@@ -68,7 +68,7 @@ export const CartContext = React.createContext()
       
       <Routes>
           <Route path='/' element={<><Nav/> <Hero/>  <Newsletter/> <Footer/> </>}/>
-          <Route path='/signup' element={<SignUp/> }/>
+          <Route path='/signup' element={<><Nav/> <SignUp/> <Footer/> </>}/>
           <Route path='/login' element={<><Nav/><Login/><Footer/></>}/>
           <Route path='/produce' element={<> <Nav/> <Product value={data} addtoCart={addtoCart} removeFromCart={removeFromCart}/> <Footer/> </>} />
           <Route path='/checkout' element={<> <Nav/> <Checkout addtoCart={addtoCart} removeFromCart={removeFromCart} cart={cart}/> <Footer/> </>} />

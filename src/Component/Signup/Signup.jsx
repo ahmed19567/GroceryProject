@@ -8,6 +8,7 @@ import produce from '../Nav/Images/fresh-produce.png'
 
 function Signup() {
   let navigate = useNavigate()
+  const [message, setMessage] = useState('')
     const [user, setUser] = useState({
         name:'',
         email:'',
@@ -20,20 +21,23 @@ function Signup() {
      axios.post('https://grocerybackend-api.onrender.com/register', user)
      .then((res)=>{
        if(res.data)
-       navigate('/')
+       navigate('/login')
         })
      .catch((e)=>{
        if(e.response.status===400)
-       window.location.reload(false)
+
+       setMessage(e.response.data)
       })
     }
      return (
         <div className='signup_wrapper'>
              <div className="signup-box">
               <img src={produce} alt=""/>
+              <h3 className='message'>{message ?  <p>{message}</p> : ''} </h3>
+
                 <form action="" method="post"  onSubmit={onSubmit}>
                 <div className="signupbox">
-        <label for="name">Name</label>
+        <label for="name">Name  (3 characters minimum)</label>
           <input type="text" id="name" name="name" required placeholder='Name' 
           onChange={(e)=>setUser({...user, name : e.target.value})}
           />
@@ -45,7 +49,7 @@ function Signup() {
           />
         </div>
         <div className="signupbox">
-        <label for="password">Password</label>
+        <label for="password">Password  (8 characters minimum)</label>
           <input type="password" id="password" name="password" required placeholder='Password' 
           onChange={(e)=>setUser({...user, password : e.target.value})}
           />

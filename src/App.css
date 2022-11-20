@@ -6,3 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+button:active {
+  transform: translateY(4px);
+}
