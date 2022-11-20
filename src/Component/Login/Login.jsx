@@ -5,7 +5,7 @@ import './login.css'
 import axios from 'axios'
 function Login() {
     const navigate = useNavigate()
-    
+    const [message, setMessage] = useState('')
     const [userName, setUserName]  = useState({
         email : '',
         password : ''
@@ -25,7 +25,11 @@ function Login() {
             window.location.reload(false)
          } 
         })
-        .catch(e=>{console.log(e.response)})
+        .catch(e=>{
+            if(e.response.status===400)
+     
+            setMessage(e.response.data)
+           })
 
 
     }
@@ -33,6 +37,7 @@ function Login() {
      return (
         <div className="login_wrapper"> 
         <div className='login'>
+     <h3 className='message'>{message ? <p>{message}</p> : ""}</h3>
             <h1>Login</h1>
         <form htmlFor="" method='POST' onSubmit={handleSubmit}  >
 

@@ -66,3 +66,8 @@
 .submit-login:hover {
   opacity: 1;
 }
+.message {
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+}
